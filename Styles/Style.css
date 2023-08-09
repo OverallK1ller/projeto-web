@@ -1,0 +1,126 @@
+/**Fontes encontradas no google    */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+}
+:root{
+    /*cores principais*/
+    --principal:#000000;
+    --secundaria:#E3CCAE;
+    --terceria:#B8621B;
+    --redes:#B8621B;
+    --link:#8D7B68;
+    --destaque:#262A56;
+}
+body{
+   box-sizing: border-box;
+   background-color:var(--principal);
+   color:var(--secundaria);
+}
+.inicio{
+    padding: 2% 0 0 15%;
+}
+.home{
+    display: flex;
+    gap: 80px;
+}
+.homelink{
+    font-family:'Krona One',sans-serif ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--terceria);
+    text-decoration: none;
+}
+.homelink:hover{
+    color: var(--link);
+}
+.destaque {
+    color:var(--destaque);
+}
+.função{
+    color:var(--destaque);
+}
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.titulo{
+    font-size: 2.25rem;
+    font-family:'Krona One', sans-serif; ;
+}
+.texto{
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+.h2links{
+    font-family: 'Krona One',sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.insgit{
+    display: flex;
+    justify-content:center;
+    gap: 16px;
+    border:2px solid var(--redes) ;
+    width: 45%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding:21.5px 0 ;
+    font-weight: 600;
+    text-decoration:none ;
+    color:var(--redes);
+    font-family:'Montserrat', sans-serif;
+
+}
+img.jallison{
+    width: 50%;
+    border-radius: 10px;
+}
+.insgit:hover{
+    color:var(--link);
+}
+.ass{
+    padding: 24px;
+    color: var(--principal);
+    background-color:var(--terceria);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width:1200px){
+    .inicio{
+        padding: 10%;
+    }
+    .home{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteudo{
+        width: auto;
+    }
+    .ass{
+        
+    }
+}
